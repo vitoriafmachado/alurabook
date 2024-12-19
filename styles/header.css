@@ -1,0 +1,177 @@
+
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer {
+    background-image: url(../img/menu_black_24dp\ 1.svg);
+}
+
+.container__botao:checked ~  .container__rotulo {
+    background: var(--linear-azul);
+}
+
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+} 
+
+
+.lista-menu__titulo , 
+.lista-menu___item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background-color: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__titulo {
+   display: none;
+}
+
+.opçoes {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+@media  screen and (min-width: 1024px) {
+ 
+ .container__titulo,
+ .container__titulo--negrito {
+     font-family: var(--fonte-secundaria);
+     font-size: 30px;
+}
+ .container__titulo {
+    font-weight: 400;
+     display: block;
+       }
+.container__titulo--negrito{
+     font-weight: 700;
+      }
+
+ .opçoes {
+     display: flex;
+      }
+
+ .opçoes__item {
+    padding: 0 1em;
+    text-transform: uppercase;
+      }
+
+.opçoes__link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.container__imagem-transparente {
+      display: none;
+}
+
+.cabeçalho__menu-hamburguer {
+    display: none;
+}
+
+.opçoes__botoes:checked ~ .lista-menu {
+       display: block; 
+       width: auto;
+}
+
+.opçoes__botoes {
+    display: none;
+}
+
+.opçoes__botoes:checked ~ .opçoes__rotulo > .opçoes__item {
+    background: var(--linear-azul);
+    color: var(--branco);
+}
+
+
+.opçoes__item {
+    padding:2em 1em ;
+}
+
+
+.lista-menu___item:hover {
+    background: var(--linear-azul);
+}
+
+
+.lista-menu___item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
+
+    }
+
+
+
+ @media screen and (min-width:1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+
+    .cabeçalho {
+        padding: 0 2em;
+    }
+
+    .opçoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+ }
