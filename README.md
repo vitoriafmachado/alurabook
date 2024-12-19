@@ -48,4 +48,5 @@ Bem-vindo ao Alurabook, um projeto focado em responsividade, desenvolvido para g
 
 <section>
   <h2>🚀 Como Executar</h2>
+  <p>https://vitoriafmachado.github.io/alurabook/</p>
 </section>
