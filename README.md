@@ -15,7 +15,7 @@ Bem-vindo ao Alurabook, um projeto focado em responsividade, desenvolvido para g
 
 <section>
   <h2>📱 Funcionalidades Responsivas</h2>
-  <h3>Menu adaptável:</h3>
+  <h3> Menu adaptável:</h3>
  <ul>
  <li>No desktop, exibe um menu completo.</li>
  <li>No celular, transforma-se em um menu hambúrguer.</li>
